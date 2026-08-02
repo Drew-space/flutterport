@@ -12,54 +12,48 @@ import Skills from "@/components/skills";
 import GetInTouch from "@/components/get-in-touch";
 
 export default function Home() {
-
   const socials = [
     {
       name: "GitHub",
       icon: Github,
-      action: () => window.open("https://github.com/Ashutoshx7", "_blank"),
+      action: () => window.open("https://github.com/Drew-space", "_blank"),
     },
     {
       name: "LinkedIn",
       icon: Linkedin,
-      action: () => window.open("https://linkedin.com/in/your-linkedin", "_blank"),
+      action: () =>
+        window.open(
+          "https://linkedin.com/in/chukwuka-enudeme-930b9a378",
+          "_blank",
+        ),
     },
     {
       name: "X",
       icon: Twitter,
-      action: () => window.open("https://x.com/Ashutosh_7x7", "_blank"),
+      action: () => window.open("https://ix-drew.vercel.app/", "_blank"),
     },
     {
       name: "Email",
       icon: Mail,
-      action: () => (window.location.href = "mailto:as1142120@gmail.com"),
+      action: () => (window.location.href = "mailto:chukwukaenudeme@gmail.com"),
     },
   ];
 
   return (
-    <div className="relative flex min-h-screen justify-center font-sans overflow-hidden">
-      <Container className="min-h-[200vh] px-8 pt-24 md:p-20 md:pb-10 mx-auto ">
-
+    <div className="relative flex min-h-screen justify-center overflow-hidden font-sans">
+      <Container className="mx-auto min-h-[200vh] px-8 pt-24 md:p-20 md:pb-10">
         {/* RIGHT BORDER */}
-        <div
-          className="absolute right-0 top-0 h-full w-6 border-x border-x-(--pattern-fg) 
-            bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)]
-            bg-size-[10px_10px] bg-fixed opacity-80 dark:opacity-12"
-        ></div>
+        <div className="absolute top-0 right-0 h-full w-6 border-x border-x-(--pattern-fg) bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-80 dark:opacity-12"></div>
 
         {/* LEFT BORDER */}
-        <div
-          className="absolute left-0 top-0 h-full w-6 border-x border-x-(--pattern-fg) 
-            bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)]
-            bg-size-[10px_10px] bg-fixed opacity-80 dark:opacity-12"
-        ></div>
+        <div className="absolute top-0 left-0 h-full w-6 border-x border-x-(--pattern-fg) bg-[repeating-linear-gradient(315deg,var(--pattern-fg)_0,var(--pattern-fg)_1px,transparent_0,transparent_50%)] bg-size-[10px_10px] bg-fixed opacity-80 dark:opacity-12"></div>
 
         {/* ---------------------------------------- */}
         {/* HEADING + SOCIALS (FIXED SAME LINE) */}
         {/* ---------------------------------------- */}
 
         <div className="flex w-full flex-wrap items-center justify-between gap-4">
-          <h1 className="text-3xl md:text-3xl font-bold font-custom tracking-tight text-neutral-900 dark:text-neutral-50">
+          <h1 className="font-custom text-3xl font-bold tracking-tight text-neutral-900 md:text-3xl dark:text-neutral-50">
             <span className="link--elara">Ashutosh Singh</span>
           </h1>
 
@@ -67,12 +61,12 @@ export default function Home() {
             {socials.map((social) => (
               <div
                 key={social.name}
-                className="relative cursor-alias group"
+                className="group relative cursor-alias"
                 onClick={social.action}
               >
                 <social.icon
                   size={20}
-                  className="text-neutral-900 dark:text-neutral-50 opacity-70 hover:opacity-100 transition"
+                  className="text-neutral-900 opacity-70 transition hover:opacity-100 dark:text-neutral-50"
                 />
               </div>
             ))}
@@ -83,45 +77,65 @@ export default function Home() {
         {/* SUBTEXT */}
         {/* ---------------------------------------- */}
 
-        <div className="text-secondary font-custom2 text-s mt-1">
+        {/* <div className="text-secondary font-custom2 text-s mt-1">
           <p>
-            <span className="text-neutral-950 dark:text-neutral-100 font-semibold"></span>
-            <span className="text-neutral-700 dark:text-neutral-300">Engineer / Artist — I love building and breaking stuff.</span>
+            <span className="font-semibold text-neutral-950 dark:text-neutral-100"></span>
+            <span className="text-neutral-700 dark:text-neutral-300">
+              Engineer / Artist — I love building and breaking stuff.
+            </span>
           </p>
 
           <p>
-            <span className="text-neutral-950 dark:text-neutral-100 font-bold"></span>
-            <span className="text-neutral-700 dark:text-neutral-300">AI is something that excites me nowadays.</span>
+            <span className="font-bold text-neutral-950 dark:text-neutral-100"></span>
+            <span className="text-neutral-700 dark:text-neutral-300">
+              AI is something that excites me nowadays.
+            </span>
           </p>
 
           <p>
-            <span className="text-neutral-950 dark:text-neutral-100 font-semibold"></span>
+            <span className="font-semibold text-neutral-950 dark:text-neutral-100"></span>
             <span className="text-neutral-700 dark:text-neutral-300">
               Believe in putting my code where my mouth is.
             </span>
           </p>
+        </div> */}
+        <div className="text-secondary font-custom2 text-s mt-1">
+          <p>
+            <span className="font-semibold text-neutral-950 dark:text-neutral-100"></span>
+            <span className="text-neutral-700 dark:text-neutral-300">
+              Self-taught dev shipping full apps solo, from idea to production.
+            </span>
+          </p>
+
+          <p>
+            <span className="font-bold text-neutral-950 dark:text-neutral-100"></span>
+            <span className="text-neutral-700 dark:text-neutral-300">
+              Currently deep in Flutter, building cross platfrom apps from
+              ground up.
+            </span>
+          </p>
+
+          <p>
+            <span className="font-semibold text-neutral-950 dark:text-neutral-100"></span>
+            <span className="text-neutral-700 dark:text-neutral-300">
+              Rooted in web, hungry for mobile, chasing both.
+            </span>
+          </p>
         </div>
 
-        <div className="w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 dark:opacity-15 my-6 -mx-2 md:-mx-14"></div>
-
-
+        <div className="-mx-2 my-6 w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 md:-mx-14 dark:opacity-15"></div>
 
         <Projects />
 
-        <div className="w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 dark:opacity-15 my-4 -mx-2 md:-mx-14"></div>
+        <div className="-mx-2 my-4 w-auto border-t border-solid border-[var(--pattern-fg)] opacity-100 md:-mx-14 dark:opacity-15"></div>
 
-
-        <Timeline></Timeline>
-
-
+        {/* <Timeline></Timeline> */}
 
         <GithubGraph></GithubGraph>
 
         <Skills />
 
         <GetInTouch />
-
-
       </Container>
     </div>
   );
