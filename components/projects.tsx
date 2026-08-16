@@ -448,7 +448,6 @@ const Projects = ({ showAll = false }: { showAll?: boolean }) => {
         "A real estate app built with Flutter, featuring saved favorites, offline support, and a clean browsing experience for house listings.",
       tech: ["flutter", "dart", "firebase"],
       github: "https://github.com/Drew-space/estate_app",
-      live: "https://yourlive.com",
 
       backgroundImage: "/image copy 5.png",
     },
@@ -462,7 +461,6 @@ const Projects = ({ showAll = false }: { showAll?: boolean }) => {
         "A movie browsing app built with Flutter, using the TMDB API for live data.",
       tech: ["flutter", "dart"],
       github: "https://github.com/Drew-space/practice_ui",
-      live: "https://yourlive.com",
 
       backgroundImage: "/image copy.png",
     },
