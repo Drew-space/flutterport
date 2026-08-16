@@ -248,11 +248,24 @@ const ProjectCard = ({
             {/* Play Button - Scales up with a nice bounce */}
             {project.video && (
               <motion.div
+                // onClick={(e) => {
+                //   e.stopPropagation();
+                //   setActiveVideo(project.video!);
+                // }}
                 onClick={(e) => {
                   e.stopPropagation();
-                  setActiveVideo(project.video!);
+                  const url = project.video!;
+                  // On mobile, just open TikTok directly
+                  const isMobile = window.innerWidth < 768;
+                  const isTikTok = url.includes("tiktok.com");
+                  if (isMobile && isTikTok) {
+                    window.open(url, "_blank");
+                    return;
+                  }
+                  setActiveVideo(url);
                 }}
-                className="pointer-events-none absolute inset-0 z-40 flex items-center justify-center group-hover:pointer-events-auto"
+                className="absolute inset-0 z-40 flex items-center justify-center"
+                // className="pointer-events-none absolute inset-0 z-40 flex items-center justify-center group-hover:pointer-events-auto"
                 variants={{
                   rest: { scale: 0.5, opacity: 0 },
                   hover: { scale: 1, opacity: 1 },
