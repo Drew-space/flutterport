@@ -3,12 +3,11 @@ import "./globals.css";
 import Footer from "@/components/footer";
 import Navbar from "@/components/Navbar";
 import { Instrument_Serif } from "next/font/google";
-import { Analytics } from '@vercel/analytics/react';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { ThemeProvider } from "@/components/theme-provider";
 import FractalTree from "@/components/ui/fractal-tree";
 import { Toaster } from "sonner";
-
 
 const instrumentSerif = Instrument_Serif({
   weight: ["400"],
@@ -16,31 +15,46 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
-  title: "Ashutoshx7",
-  description: "Engineer / Artist — I love building and breaking stuff",
+  title: "Drew",
+  description: "Frontend dev who fell hard for app development",
   openGraph: {
-    title: "Ashutoshx7",
-    description: "Engineer / Artist — I love building and breaking stuff",
-    url: "https://www.ashutoshx7.me/", // Update to your actual URL if different
-    siteName: "Ashutoshx7",
+    title: "Drew",
+    description: "Frontend dev who fell hard for app development",
+    url: "https://ix-drew.vercel.app/", // Update to your actual URL if different
+    siteName: "Drew",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ashutoshx7",
-    description: "Engineer / Artist — I love building and breaking stuff",
+    title: "Drew",
+    description: "Frontend dev who fell hard for app development",
   },
+  // title: "Ashutoshx7",
+  // description: "Engineer / Artist — I love building and breaking stuff",
+  // openGraph: {
+  //   title: "Ashutoshx7",
+  //   description: "Engineer / Artist — I love building and breaking stuff",
+  //   url: "https://www.ashutoshx7.me/", // Update to your actual URL if different
+  //   siteName: "Ashutoshx7",
+  //   type: "website",
+  // },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Ashutoshx7",
+  //   description: "Engineer / Artist — I love building and breaking stuff",
+  // },
 };
 
 export default function RootLayout({
   children,
-}: { 
+}: {
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>{/* 🛠 Important for dark mode */}
+    <html lang="en" suppressHydrationWarning>
+      {/* 🛠 Important for dark mode */}
       <body
-        className={`${instrumentSerif.className} antialiased bg-neutral-50 dark:bg-neutral-950 transition-colors duration-300 [--pattern-fg:var(--color-neutral-200)]`}
+        className={`${instrumentSerif.className} bg-neutral-50 antialiased transition-colors duration-300 [--pattern-fg:var(--color-neutral-200)] dark:bg-neutral-950`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Analytics />

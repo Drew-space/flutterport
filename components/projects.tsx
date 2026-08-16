@@ -403,7 +403,7 @@ const ProjectCard = ({
                 ? "Not Started Yet"
                 : isBuilding
                   ? "Building"
-                  : "All Systems Operational";
+                  : "Live";
 
               return (
                 <span className="font-custom2 inline-flex shrink-0 items-center gap-2 rounded-full border border-neutral-200 bg-white px-3 py-1 text-[10px] font-medium text-neutral-700 dark:border-neutral-800 dark:bg-black dark:text-neutral-200">
@@ -451,6 +451,20 @@ const Projects = ({ showAll = false }: { showAll?: boolean }) => {
       live: "https://yourlive.com",
 
       backgroundImage: "/image copy 5.png",
+    },
+    {
+      title: "Movie App",
+      src: "/movie.png",
+      lightModeSrc: "/movie-app.png",
+      video:
+        "https://www.tiktok.com/@ix_drew/video/7671032394924920085?_r=1&_t=ZS-98vk8JRcZQS",
+      description:
+        "A movie browsing app built with Flutter, using the TMDB API for live data.",
+      tech: ["flutter", "dart"],
+      github: "https://github.com/Drew-space/practice_ui",
+      live: "https://yourlive.com",
+
+      backgroundImage: "/image copy.png",
     },
     {
       title: "Gadget App",

@@ -151,7 +151,7 @@ export default function Contact() {
 
           <div className="font-custom2 mt-10 flex flex-col items-center justify-between gap-4 text-xs text-neutral-500 md:flex-row dark:text-neutral-400">
             <div className="flex items-center gap-2">
-              <p>Ashutosh</p>
+              <p>Drew</p>
             </div>
 
             {/* Displacement Text - Visible and Hoverable */}
@@ -159,7 +159,7 @@ export default function Contact() {
 
             <div className="flex items-center gap-4">
               <a
-                href="https://x.com/Ashutosh_7x7"
+                href="https://x.com/_ix_drew?s=21"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -169,7 +169,7 @@ export default function Contact() {
                 />
               </a>
               <a
-                href="https://linkedin.com/in/your-linkedin"
+                href="linkedin.com/in/chukwuka-enudeme-930b9a378"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -179,7 +179,7 @@ export default function Contact() {
                 />
               </a>
               <a
-                href="https://github.com/Ashutoshx7"
+                href="https://github.com/Drew-space"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -194,7 +194,7 @@ export default function Contact() {
 
         <div className="relative -mt-20 flex h-96 w-full items-center justify-center overflow-hidden">
           <DisplacementText
-            text="ASHUTOSH"
+            text="Drew"
             fontSize={300}
             className="h-full w-full"
             lightColor="#171717"
