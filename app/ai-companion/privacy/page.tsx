@@ -4,7 +4,7 @@ import type { ReactNode } from "react";
 // Change these four before you publish
 const APP_NAME = "AI Companion";
 const DEVELOPER = "Enudeme Chukwuka";
-const CONTACT_EMAIL = "support@example.com";
+const CONTACT_EMAIL = "chukwukaenudeme@gmail.com";
 const LAST_UPDATED = "November 11, 2026";
 
 export const metadata: Metadata = {
